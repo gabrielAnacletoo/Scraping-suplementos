@@ -1,0 +1,14 @@
+# Conteúdo do arquivo app_layout.kv
+
+<GradientBackground>:
+    canvas.before:
+        Color:
+            rgba: self.color_top
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        Color:
+            rgba: self.color_bottom
+        Rectangle:
+            pos: self.x, self.y + 1
+            size: self.width, self.height - 1
